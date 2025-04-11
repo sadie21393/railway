@@ -78,7 +78,7 @@ def transform_movie(movie, match_score=0.0):
     show_id = movie.get("show_id")
     average_rating = get_average_rating(show_id)
     return {
-        "movieId": show_id,
+        "showId": show_id,
         "title": movie.get("title"),
         "description": movie.get("description", "No description available"),
         "duration": movie.get("duration", "N/A"),
